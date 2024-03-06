@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.circulo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECIEVE_SMS" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="@xml/my_backup_rules"
+        android:icon="@drawable/logo6"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/MyTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Interfaces.SolicitudesHistorialA"></activity>
+        <activity android:name=".Interfaces.SolicitudesHistorialH" />
+        <activity android:name=".DialogCliente" />
+        <activity android:name=".Interfaces.HistorialAlltime" />
+        <activity android:name=".Interfaces.RealizadosHoy" />
+        <activity android:name=".Interfaces.solicitudes" />
+        <activity
+            android:name=".Interfaces.home"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Interfaces.cobros"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Interfaces.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

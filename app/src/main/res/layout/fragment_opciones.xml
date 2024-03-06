@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#e4e9ef"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    android:layout_alignParentStart="true"
+    android:layout_height="match_parent"
+    android:theme="@style/MyTheme.NoActionBar">
+    <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/nav"
+        android:elevation="8dp">
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/logo_blanco"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+
+            android:text="SIGSF Círculo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/exit" />
+
+
+    </Toolbar>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/subir"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#232323"
+                android:clickable="true"
+
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_gravity="center"
+                        android:background="@drawable/upload"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subir datos al servidor"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/descargar_datos"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#232323"
+                android:clickable="true"
+
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_gravity="center"
+                        android:background="@drawable/download"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargar datos del servidor"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cache"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#EF0946"
+                android:clickable="true"
+
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_cache"
+                        android:backgroundTint="@color/white"
+                        android:tint="@color/white"
+                        android:tintMode="src_over" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Borrar memoria caché"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ayuda"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#232323"
+                android:clickable="true"
+
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_gravity="center"
+                        android:background="@drawable/help"
+                        android:backgroundTint="@color/white"
+                        android:tint="#FFFFFF"
+                        android:tintMode="src_over" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ayuda sobre la aplicación"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/acercade"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#232323"
+                android:clickable="true"
+
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_about"
+                        android:backgroundTint="@color/white"
+                        android:tint="#FFFFFF"
+                        android:tintMode="src_over" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acerca de la aplicación"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <EditText
+                android:id="@+id/consulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
